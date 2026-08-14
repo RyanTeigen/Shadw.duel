@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shadow Duel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Shadow Duel</h1>
+
+    <div class="scoreboard">
+      <div id="opponent-info" class="info"></div>
+      <div id="turn-info" class="info turn"></div>
+      <div id="player-info" class="info"></div>
+    </div>
+
+    <div id="opponent-hand" class="hand"></div>
+    <div id="opponent-field" class="field"></div>
+
+    <div class="divider">⚔️ attack by clicking one of your ready monsters, then an opponent zone ⚔️</div>
+
+    <div id="player-field" class="field"></div>
+    <div id="player-hand" class="hand"></div>
+
+    <div class="controls">
+      <button id="end-turn-btn">End Turn</button>
+    </div>
+
+    <div id="log"></div>
+  </div>
+
+  <div id="game-over-overlay" class="hidden">
+    <div class="game-over-box">
+      <h2 id="game-over-text"></h2>
+      <button id="restart-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="cards.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
